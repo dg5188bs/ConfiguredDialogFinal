@@ -15,11 +15,35 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+/**
+ * The type Main activity.
+ */
 public class MainActivity extends AppCompatActivity {
+    /**
+     * The Si.
+     */
     Intent si;
-    AlertDialog.Builder adb,adb2,adb3;
+    /**
+     * The Adb.
+     */
+    AlertDialog.Builder adb, /**
+     * The Adb 2.
+     */
+    adb2, /**
+     * The Adb 3.
+     */
+    adb3;
+    /**
+     * The Colors.
+     */
     final String[] colors ={"Red","Green","Blue"};
+    /**
+     * The Color.
+     */
     int color[];
+    /**
+     * The Linear layout.
+     */
     LinearLayout linearLayout;
 
     @Override
@@ -32,6 +56,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * First.
+     *
+     * @param view the view
+     */
     public void first(View view) {
         adb = new AlertDialog.Builder(this);
         adb.setCancelable(false);
@@ -54,6 +83,11 @@ public class MainActivity extends AppCompatActivity {
         ad.show();
     }
 
+    /**
+     * Second.
+     *
+     * @param view the view
+     */
     public void second(View view) {
         adb2 = new AlertDialog.Builder(this);
         adb2.setCancelable(false);
@@ -88,10 +122,20 @@ public class MainActivity extends AppCompatActivity {
         ad.show();
     }
 
+    /**
+     * Third.
+     *
+     * @param view the view
+     */
     public void Third(View view) {
         linearLayout.setBackgroundColor(Color.WHITE);
     }
 
+    /**
+     * Fourth.
+     *
+     * @param view the view
+     */
     public void fourth(View view) {
         adb3 = new AlertDialog.Builder(this);
         adb3.setCancelable(false);
